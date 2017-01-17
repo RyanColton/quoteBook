@@ -18,6 +18,11 @@ angular.module('quoteBook').service('mainService', function(){
     quotes.push(newObj);
   }
 
+  this.removeQuote = function(index){
+    quotes.splice(index, 1)
+  }
+
+
 
 
 

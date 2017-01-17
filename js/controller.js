@@ -9,7 +9,10 @@ angular.module('quoteBook').controller('mainController', function($scope, mainSe
     $scope.result = mainService.addQuote($scope.quoteText, $scope.authorText);
   }
 
-  $scope.removeQuote = function(index){
-    $scope.quotes.splice(index, 1)
-  }
+  $scope.remove = mainService.removeQuote;
+
+
+  // $scope.removeQuote = function(index){
+  //   $scope.quotes.splice(index, 1)
+  // }
 })
